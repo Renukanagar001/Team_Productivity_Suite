@@ -1,0 +1,76 @@
+Main Page Layout Layout
+.page-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content-area {
+  display: flex;
+  flex: 1;
+}
+
+/* Content Window */
+.content-box {
+  padding: 30px;
+  flex: 1;
+  background-color: #f8fafc;
+}
+
+.content-box h1 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 10px;
+}
+
+.page-subtitle {
+  color: #64748b;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* Data List Styles (Tasks, Users, Notifications) */
+.data-card-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 600px;
+}
+
+.data-list-item {
+  background-color: #ffffff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.02);
+  font-size: 15px;
+  color: #334155;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+/* Profile Specific Grid */
+.profile-card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  max-width: 500px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+.profile-field {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+.profile-field strong {
+  color: #0f172a;
+  display: inline-block;
+  width: 100px;
+}

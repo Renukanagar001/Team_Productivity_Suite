@@ -1,0 +1,134 @@
+/* Full page wrapper background */
+.login-page-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(150deg,rgba(2, 0, 36, 1) 2%, rgba(9, 9, 121, 1) 52%, rgba(0, 212, 255, 1) 100%);
+  padding: 20px;
+}
+
+/* Main white card box */
+.login-card {
+  background-color: #ffffff;
+  padding: 40px;
+  max-width: 420px;
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Header section styling */
+.login-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-header h2 {
+  font-size: 26px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin-bottom: 8px;
+}
+
+.login-header p {
+  color: #666666;
+  font-size: 14px;
+}
+
+/* Form element structural spacing */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group-password {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.password-label-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin-bottom: 6px;
+}
+
+.password-label-row label {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333333;
+  margin: 0;
+}
+
+/* Link element styling override */
+.forgot-link, .signup-link {
+  color: #1877f2;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.forgot-link {
+  font-size: 13px;
+}
+
+.signup-link {
+  font-weight: 600;
+}
+
+/* Input layout reset override */
+.login-input {
+  margin: 0;
+}
+
+/* Checkbox remember section */
+.remember-me-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.remember-me-group input {
+  width: auto;
+  cursor: pointer;
+}
+
+.remember-me-group label {
+  font-size: 13px;
+  color: #555555;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Core submit button */
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 8px;
+}
+
+/* Footer link row card bottom divider */
+.login-footer {
+  text-align: center;
+  margin-top: 25px;
+  border-top: 1px solid #eeeeee;
+  padding: top 20px;
+}
+
+.login-footer p {
+  font-size: 14px;
+  color: #666666;
+  margin: 0;
+}
