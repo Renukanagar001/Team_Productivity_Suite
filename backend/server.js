@@ -89,7 +89,13 @@ app.post('/api/settings/update', async (req, res) => {
 const PORT = process.env.PORT || 5001;
 
 // Standard loopback interface mapping
-app.listen(PORT, () => {
-    console.log(`Server is running perfectly on port ${PORT} 🚀`);
-    console.log(`Local network link gateway: http://localhost:${PORT}`);
-});
+// Local testing ke liye port setup aur app.listen ko handle karein
+if (process.env.NODE_ENV !== 'production') {
+    const PORT = process.env.PORT || 5001;
+    app.listen(PORT, () => {
+        console.log(`Server is running perfectly on port ${PORT} 🚀`);
+        console.log(`Local network link gateway: http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
